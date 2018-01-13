@@ -2,15 +2,44 @@
   "name": "ng2-chess",
   "version": "0.0.0",
   "license": "MIT",
+  "homepage": "https://loicmarie.github.io/ng2-chess",
+  "bugs": {
+    "url": "https://github.com/loicmarie/ng2-chess/issues",
+    "email": "loic.marie54@gmail.com"
+  },
+  "author": {
+    "name": "Loïc MARIE",
+    "email": "loic.marie54@gmail.com",
+    "url": "https://github.com/loicmarie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loicmarie/ng2-chess.git"
+  },
+  "keywords": [
+    "chess",
+    "engine",
+    "chessboard",
+    "chessboardjs",
+    "game",
+    "tree",
+    "angular",
+    "angular2",
+    "module",
+    "component"
+  ],
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
+    "start": "ng serve --app doc",
+    "build": "ng build --app module --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p ng-package.json",
+    "build-doc": "ng build --app doc --prod --base-href https://loicmarie.github.io/ng2-chessboard/",
+    "deploy-doc": "ngh"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
@@ -41,6 +70,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^1.6.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
